@@ -79,9 +79,7 @@ public class User {
     public void addRole(Role role) {
     	roles.add(role);
     }
-    /*  verifica se o nome do meu usuario possui 
-     * o authority e (qual o acesso ele terá)
-     */
+ // verifica se o usuario tem autorização   
     public boolean hasRole(String roleName) {
     	for (Role role : roles) {
     		if (role.getAuthority().equals(roleName)) {
